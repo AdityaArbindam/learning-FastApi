@@ -6,7 +6,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
 from sqlalchemy.sql.sqltypes import TIMESTAMP
 from sqlalchemy .sql.expression import text
 from sqlalchemy.orm import relationship
-from tkinter import CASCADE
+from _tkinter import CASCADE
 
 class Post(Base):
     __tablename__ = "posts"
