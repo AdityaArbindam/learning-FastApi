@@ -3,7 +3,7 @@ from app import model
 from app.routers.vote import vote
 from .db import engine
 from .routers import post,user,auth2,vote
-
+import _tkinter
 
 model.Base.metadata.create_all(bind=engine)
 
