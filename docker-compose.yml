@@ -4,3 +4,12 @@ services:
     build: .
     ports:
       - 8000:8000
+  
+  postgres:
+    image: 
+    environment:
+      - POSTGRES_PASSWORD= aditya123
+      - POSTGRES_DB=  FastApi
+
+
+
