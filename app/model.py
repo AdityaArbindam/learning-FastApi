@@ -1,6 +1,6 @@
 # importing the db.py file we created to connect the database and API using SqlAlchemy
-from tkinter import CASCADE
-from tkinter.tix import Tree
+import _tkinter
+from tkinter import CASCADE 
 from .db import Base
 from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
 from sqlalchemy.sql.sqltypes import TIMESTAMP
