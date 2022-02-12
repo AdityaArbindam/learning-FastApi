@@ -20,7 +20,7 @@ class post(BaseModel):
 
 
 try:
-    conn = psycopg2.connect(host="localhost",database='FastApi',user='postgres',password='Aditya@19',cursor_factory=RealDictCursor)
+    conn = psycopg2.connect(host="localhost",database='FastApi',user='postgres',password='aditya123',cursor_factory=RealDictCursor)
     cursor = conn.cursor()
     print("database connection was successful")
 
