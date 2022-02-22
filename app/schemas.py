@@ -3,8 +3,9 @@ from typing import Optional
 from pydantic import BaseModel, EmailStr,conint
 from sqlalchemy import true
 from datetime import datetime
-# creating diffrent models for diffrent request
 
+
+# creating diffrent models for diffrent request
 
 class Userout(BaseModel):
     email: EmailStr

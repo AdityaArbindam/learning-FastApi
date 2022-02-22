@@ -19,7 +19,7 @@ def login(user_credentials: OAuth2PasswordRequestForm=Depends(),db: session = De
     if not user:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN,detail=f"not found")
     
-    # now we are checking for valid email
+    # now we are checking for valid password
 
     if not utils.verify(user_credentials.password,user.password):
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN,detail="not found")
